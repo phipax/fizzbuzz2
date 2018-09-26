@@ -19,7 +19,6 @@ describe 'fizzbuzz' do
     end
   end
 
-=begin
   it 'returns "buzz" when passed 5 ' do
     expect(fizzbuzz(5)).to eq 'buzz'
   end
@@ -31,19 +30,14 @@ describe 'fizzbuzz' do
   it 'returns the number if it is neither a multiple of 3 or 5' do
     expect(fizzbuzz(2)).to eq '2'
   end
-
+  
+=begin
   it 'returns "fizz" for the number 3' do
   expect(3.fizzbuzz).to eq 'fizz'
 end 
 =end
 end
 
-=begin
-describe 'fizzbuzz_multiple' do
-    it 'returns correct values for mass test' do
-    expect ([1..100].each do{ |x| }
-  
-end
-=end
+
 
   
