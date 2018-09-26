@@ -1,20 +1,15 @@
 require 'fizzbuzz'
 
 describe 'fizzbuzz' do
-  it 'returns "fizz" when passed rand ' do
+  it 'returns correct response when passed random values ' do
     seed = rand(1..100)
-    puts seed
     if seed%3 == 0 && seed%5 == 0 
-     puts "first con"
       expect(fizzbuzz(seed)).to eq 'fizzbuzz'
     elsif seed%3 == 0 
-      puts "second con"
       expect(fizzbuzz(seed)).to eq 'fizz'
     elsif seed%5 == 0
-      puts "third con"
       expect(fizzbuzz(seed)).to eq 'buzz'
     else
-      puts "Fourth con"
       expect(fizzbuzz(seed)).to eq seed.to_s
     end
   end
